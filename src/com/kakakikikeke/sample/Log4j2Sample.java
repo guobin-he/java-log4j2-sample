@@ -14,7 +14,7 @@ public class Log4j2Sample {
 	public static void main(String[] args) {
 		new Log4j2Sample();
 		log.error("This is error messages");
-		log.trace("���L�ȍ~��log4j2.xml�t�@�C�����N���X�p�X�ɒʂ��Ă��Ȃ��ƕ\������܂���");
+		log.trace("下記以降はlog4j2.xmlファイルがクラスパスに通っていないと表示されません");
 		log.trace("This is trace messages");
 	}
 	

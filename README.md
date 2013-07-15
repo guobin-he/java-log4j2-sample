@@ -1,29 +1,34 @@
 java-log4j2-sample
 ------------------
 
-* �ݒ���@
-  * log4j2�̃_�E�����[�h
-    * http://logging.apache.org/log4j/2.x/download.html ����ŐV��log4j2���_�E�����[�h���܂�
-    * log4j-api-2.0-beta8.jar ��  log4j-core-2.0-beta8.jar ��lib�t�H���_�z���Ɉړ����܂��i�o�[�W�����̓_�E�����[�h�������Ƃ͈قȂ�\��������܂��j
-    * ��L2�̃t�@�C�����N���X�p�X�ɒǉ����܂�
-  * log4j2.xml�̔z�u
-    * src �z���ɔz�u���܂�
-    * src�����̓f�t�H���g�ŃN���X�p�X���ʂ��Ă���p�X�ɂȂ��Ă��܂�
-* ����
-  * log4j2.xml �� log4j2.json ��2�v���p�e�B�t�@�C���œ��e�𑀍�ł��܂�
-  * log4j.properties �͂Ȃ����Ă݂����ł��A�܂�log4j��log4j2�ƃt�@�C�����̋K�����ς���Ă��܂�
-  * �f�t�H���g�Ńv���p�e�B�t�@�C�����K�v�Ȃ��Ȃ�܂��������O���x����error�ɂȂ��Ă��܂�
-  * TRACE < DEBUG < INFO < WARN < ERROR < FATAL �̏��Ń��O���x���͐ݒ�ł��܂��i�f�t�H���g��ERROR��FATAL�̂ݕ\������܂��j
-    * http://logging.apache.org/log4j/2.x/manual/architecture.html
-  * �w��ł���o�̓t�H�[�}�b�g
-    * http://logging.apache.org/log4j/2.x/manual/layouts.html
-  * �^�O
-    * appenders
-      * �R���\�[���ɏo�͂���t�H�[�}�b�g�ƃt�@�C���ɏo�͂���t�H�[�}�b�g���`���܂�
-      * �w��ł���appenders�ꗗ
-        * http://logging.apache.org/log4j/2.x/manual/appenders.html
-      * RollingFileAppender
-        * http://logging.apache.org/log4j/2.x/manual/appenders.html#RollingFileAppender
-    * loggers
-      * �J�e�S�����`���܂�
-      * �J�e�S���͂ǂ�appenders���g�������w�肷�邱�ƂŃ��O�̏o�͕��������肵�܂�    
+設定方法
+=======
+
+* log4j2のダウンロード
+  * http://logging.apache.org/log4j/2.x/download.html から最新のlog4j2をダウンロードします
+  * log4j-api-2.0-beta8.jar と  log4j-core-2.0-beta8.jar をlibフォルダ配下に移動します（バージョンはダウンロードした時とは異なる可能性があります）
+  * 上記2つのファイルをクラスパスに追加します
+* log4j2.xmlの配置
+  * src 配下に配置します
+  * src直下はデフォルトでクラスパスが通っているパスになっています
+    
+特徴
+====
+
+* log4j2.xml と log4j2.json の2つプロパティファイルで内容を操作できます
+* log4j.properties はなくってみたいです、またlog4j→log4j2とファイル名の規則も変わっています
+* デフォルトでプロパティファイルが必要なくなりましたがログレベルがerrorになっています
+* TRACE < DEBUG < INFO < WARN < ERROR < FATAL の順でログレベルは設定できます（デフォルトはERRORとFATALのみ表示されます）
+  * http://logging.apache.org/log4j/2.x/manual/architecture.html
+* 指定できる出力フォーマット
+  * http://logging.apache.org/log4j/2.x/manual/layouts.html
+* タグ
+  * appenders
+    * コンソールに出力するフォーマットとファイルに出力するフォーマットを定義します
+    * 指定できるappenders一覧
+      * http://logging.apache.org/log4j/2.x/manual/appenders.html
+    * RollingFileAppender
+      * http://logging.apache.org/log4j/2.x/manual/appenders.html#RollingFileAppender
+  * loggers
+    * カテゴリを定義します
+    * カテゴリはどのappendersを使うかを指定することでログの出力方式を決定します    

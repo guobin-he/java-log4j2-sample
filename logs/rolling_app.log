@@ -1,3 +1,3 @@
-2013-07-15 20:38:33.547 [main] ERROR com.kakakikikeke.sample.Log4j2Sample - This is error messages
-2013-07-15 20:38:33.557 [main] TRACE com.kakakikikeke.sample.Log4j2Sample - ���L�ȍ~��log4j2.xml�t�@�C�����N���X�p�X�ɒʂ��Ă��Ȃ��ƕ\������܂���
-2013-07-15 20:38:33.557 [main] TRACE com.kakakikikeke.sample.Log4j2Sample - This is trace messages
+2013-07-15 20:52:55.060 [main] ERROR com.kakakikikeke.sample.Log4j2Sample - This is error messages
+2013-07-15 20:52:55.070 [main] TRACE com.kakakikikeke.sample.Log4j2Sample - 下記以降はlog4j2.xmlファイルがクラスパスに通っていないと表示されません
+2013-07-15 20:52:55.070 [main] TRACE com.kakakikikeke.sample.Log4j2Sample - This is trace messages
