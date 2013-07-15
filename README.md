@@ -25,12 +25,12 @@ log4j2のサンプルソースコードです
 * 指定できる出力フォーマット
   * http://logging.apache.org/log4j/2.x/manual/layouts.html
 * タグ
-  * appenders
-    * コンソールに出力するフォーマットとファイルに出力するフォーマットを定義します
-    * 指定できるappenders一覧
-      * http://logging.apache.org/log4j/2.x/manual/appenders.html
-    * RollingFileAppender
-      * http://logging.apache.org/log4j/2.x/manual/appenders.html#RollingFileAppender
-  * loggers
-    * カテゴリを定義します
-    * カテゴリはどのappendersを使うかを指定することでログの出力方式を決定します    
+    * appenders
+      * コンソールに出力するフォーマットとファイルに出力するフォーマットを定義します
+      * 指定できるappenders一覧
+          * http://logging.apache.org/log4j/2.x/manual/appenders.html
+      * RollingFileAppender
+          * http://logging.apache.org/log4j/2.x/manual/appenders.html#RollingFileAppender
+    * loggers
+        * カテゴリを定義します
+        * カテゴリはどのappendersを使うかを指定することでログの出力方式を決定します    
