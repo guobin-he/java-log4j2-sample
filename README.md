@@ -24,7 +24,7 @@ log4j2のサンプルソースコードです
   * http://logging.apache.org/log4j/2.x/manual/architecture.html
 * 指定できる出力フォーマット
   * http://logging.apache.org/log4j/2.x/manual/layouts.html
-* タグ
+* 出力に必要な最低限のタグ
     * appenders
       * コンソールに出力するフォーマットとファイルに出力するフォーマットを定義します
       * 指定できるappenders一覧
