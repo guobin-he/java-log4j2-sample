@@ -3,8 +3,8 @@ java-log4j2-sample
 
 log4j2のサンプルソースコードです
 
-設定方法
---------
+How to use
+----------
 
 * log4j2のダウンロード
   * http://logging.apache.org/log4j/2.x/download.html から最新のlog4j2をダウンロードします
@@ -14,7 +14,7 @@ log4j2のサンプルソースコードです
   * src 配下に配置します
   * src直下はデフォルトでクラスパスが通っているパスになっています
     
-特徴
+Tips
 ----
 
 * log4j2.xml と log4j2.json の2つプロパティファイルで内容を操作できます
