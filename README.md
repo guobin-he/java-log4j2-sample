@@ -5,7 +5,7 @@ log4j2のサンプルソースコードです
 Version
 -------
 
-* log4j2 2.0-beta8
+* log4j2 2.3
 * Java jdk_1.7.0_40
 * Eclipse Kepler 4.3
 
@@ -23,7 +23,6 @@ How to use
 
 1. GithubからEclipseにプロジェクトを[インポート](http://kakakikikeke.blogspot.jp/2012/12/githubandroideclipse.html)します
 1. プロジェクトのJavaのバージョンをビルドパスの構成から変更します
-1. libフォルダ配下のjarファイルをビルドパスに追加してください
 
 ### 実行方法
 
@@ -35,13 +34,9 @@ How to use
 Configure
 ---------
 
-* log4j2のダウンロード
-  * log4j2の[配布サイト](http://logging.apache.org/log4j/2.x/download.html)から最新のlog4j2をダウンロードしてください
-    * リポジトリに含まれる`log4j-api-2.0-beta8.jar`と`log4j-core-2.0-beta8.jar`を使っても問題ないですが、最新版を使うことをおすすめします
-  * ダウンロードしたjarファイルをlibフォルダ配下に配置しビルドパスに追加してください
-* log4j2.xmlの配置
-  * src 配下に配置します
-    * Eclipseでは src 直下はデフォルトでクラスパスが通っています
+* log4j2.xmlの編集
+  * src/main/java 配下のlog4j.xmlを編集できます
+    * Eclipse + Maven では src/main/java 直下はデフォルトでクラスパスが通っています
 
 Tips
 ----
