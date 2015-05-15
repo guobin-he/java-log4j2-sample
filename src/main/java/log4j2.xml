@@ -18,6 +18,13 @@
 				<TimeBasedTriggeringPolicy />
 			</Policies>
 		</RollingFile>
+		<RollingFile name="RollingFile" fileName="logs/rolling_app.json" filePattern="logs/rolling_app_%d{yyyy-MM-dd}.json">
+			<JSONLayout compact="true" eventEol="true" locationInfo="true">
+			</JSONLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingFile>
 	</appenders>
 	<loggers>
 		<!-- 全パッケージ配下のクラスに対して設定するログレベル -->

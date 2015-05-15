@@ -21,6 +21,7 @@ public class Log4j2Sample {
 		log.error("This is error messages");
 		log.trace("下記以降はlog4j2.xmlファイルがクラスパスに通っていないと表示されません");
 		log.trace("This is trace messages");
+		log.trace("kakakikikeke 20 Japan");
 	}
 	
 }
