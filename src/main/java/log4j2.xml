@@ -2,7 +2,7 @@
 <configuration status="OFF">
 	<appenders>
 		<Console name="Console" target="SYSTEM_OUT">
-			<JSONLayout compact="true" eventEol="true">
+			<JSONLayout compact="true" eventEol="true" locationInfo="true" properties="true">
 			</JSONLayout>
 		</Console>
 		<File name="File" fileName="logs/normal_app.log">
