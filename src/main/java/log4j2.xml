@@ -2,9 +2,8 @@
 <configuration status="OFF">
 	<appenders>
 		<Console name="Console" target="SYSTEM_OUT">
-			<PatternLayout>
-				<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
-			</PatternLayout>
+			<JSONLayout compact="true" eventEol="true">
+			</JSONLayout>
 		</Console>
 		<File name="File" fileName="logs/normal_app.log">
 			<PatternLayout>
