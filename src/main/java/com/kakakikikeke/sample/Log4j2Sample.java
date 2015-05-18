@@ -6,6 +6,8 @@ import org.apache.logging.log4j.ThreadContext;
 
 public class Log4j2Sample {
 
+	private static final String TAB = "\t";
+
 	private static Logger log;
 	
 	public Log4j2Sample() {
@@ -22,6 +24,7 @@ public class Log4j2Sample {
 		log.trace("下記以降はlog4j2.xmlファイルがクラスパスに通っていないと表示されません");
 		log.trace("This is trace messages");
 		log.trace("kakakikikeke 20 Japan");
+		log.trace("kakakikikeke" + TAB + "20" + TAB + "Japan");
 	}
 	
 }
